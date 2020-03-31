@@ -15,9 +15,10 @@ module.exports = {
                                          'ongs.email', 
                                          'ongs.whatsapp',
                                          'ongs.city',
-                                         'ongs.uf']);
+                                         'ongs.uf'
+                                        ]);
 
-        response.header('X-Token-Count',count['count(*)']);
+        response.header('X-Totoal-Count',count['count(*)']);
 
         return response.json(incidents);
     },
